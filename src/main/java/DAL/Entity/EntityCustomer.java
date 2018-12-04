@@ -1,4 +1,4 @@
-package DAL;
+package DAL.Entity;
 
 import javax.persistence.*;
 import java.sql.Timestamp;

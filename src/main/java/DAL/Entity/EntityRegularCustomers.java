@@ -1,13 +1,12 @@
-package DAL;
+package DAL.Entity;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
 @Table(name = "regular_customers", schema = "dbo", catalog = "anticafeM3205Gudauskayte")
-public class EntityRegularCustomers implements Serializable {
+public class EntityRegularCustomers {
     private int cardNumber;
     private String customerName;
     private Timestamp birthDate;

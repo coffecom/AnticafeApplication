@@ -1,10 +1,9 @@
-import DAL.EntityAnticafe;
+import DAL.Entity.EntityAnticafe;
 import DAL.HibernateSessionFactory;
 import org.hibernate.Session;
 
 public class App {
     public static void main(String[] args){
-        //Access access = new Access();
         Session session = HibernateSessionFactory.getSessionFactory().openSession();
         session.beginTransaction();
         EntityAnticafe anticafeEntity = new EntityAnticafe();
@@ -14,6 +13,6 @@ public class App {
         session.save(anticafeEntity);
         session.getTransaction().commit();
         session.close();
-        HibernateSessionFactory.shutdown();
+        HibernateSessionFactory.closeSessionFactory();
     }
 }
