@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "game", schema = "dbo", catalog = "anticafeM3205Gudauskayte")
-public class EntityGame {
+public class GameEntity {
     private String title;
     private String genre;
     private Integer recomendedAge;
@@ -110,7 +110,7 @@ public class EntityGame {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        EntityGame that = (EntityGame) o;
+        GameEntity that = (GameEntity) o;
         return Objects.equals(title, that.title) &&
                 Objects.equals(genre, that.genre) &&
                 Objects.equals(recomendedAge, that.recomendedAge) &&

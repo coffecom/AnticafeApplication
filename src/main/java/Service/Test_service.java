@@ -1,8 +1,8 @@
 package Service;
 
-import DAL.DAO.DAO;
-import DAL.DAO.DAO_Anticafe;
-import DAL.Entity.EntityAnticafe;
+import DAL.DAO.interfaces.DAO;
+import DAL.DAO.implementations.BoxWithGameDAOImplementation;
+import DAL.Entity.BoxWithGameEntity;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class Test_service {
         this.dao = dao;
     }
 
-    public List<EntityAnticafe> getAll(){
+    public List<BoxWithGameEntity> getAll(){
         dao.openSession();
         List list = dao.getAll();
         dao.closeSession();
@@ -22,9 +22,11 @@ public class Test_service {
 
 
     public static void main(String[] args){
-        Test_service test_service = new Test_service(new DAO_Anticafe());
-        for(EntityAnticafe anticafe : test_service.getAll()){
-            System.out.println(anticafe.getAddressOfCafe());
+        Test_service test_service = new Test_service(new BoxWithGameDAOImplementation());
+        for(BoxWithGameEntity anticafe : test_service.getAll()){
+            System.out.println(anticafe.getTitle());
+            System.out.println(anticafe.getCondition());
+            //System.out.println(anticafe.getId());
         }
     }
 }

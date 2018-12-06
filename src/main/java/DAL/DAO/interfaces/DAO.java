@@ -1,8 +1,10 @@
-package DAL.DAO;
+package DAL.DAO.interfaces;
 
+import DAL.Connector;
+import DAL.HibernateSessionFactory;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 

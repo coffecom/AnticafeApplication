@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "regular_customers", schema = "dbo", catalog = "anticafeM3205Gudauskayte")
-public class EntityRegularCustomers {
+public class RegularCustomersEntity {
     private int cardNumber;
     private String customerName;
     private Timestamp birthDate;
@@ -100,7 +100,7 @@ public class EntityRegularCustomers {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        EntityRegularCustomers that = (EntityRegularCustomers) o;
+        RegularCustomersEntity that = (RegularCustomersEntity) o;
         return cardNumber == that.cardNumber &&
                 Objects.equals(customerName, that.customerName) &&
                 Objects.equals(birthDate, that.birthDate) &&

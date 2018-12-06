@@ -7,7 +7,7 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class HibernateSessionFactory {
-    private static SessionFactory sessionFactory = buildFactory() ;
+    private static SessionFactory sessionFactory = buildFactory();
 
     protected static SessionFactory buildFactory() {
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
@@ -17,17 +17,16 @@ public class HibernateSessionFactory {
             sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
         } catch (Exception e) {
             StandardServiceRegistryBuilder.destroy(registry);
-
             throw new ExceptionInInitializerError("Initial SessionFactory failed" + e);
         }
         return sessionFactory;
     }
 
-    public static SessionFactory getSessionFactory(){
+    public static SessionFactory getSessionFactory() {
         return sessionFactory;
     }
 
-    public static void closeSessionFactory(){
+    public static void closeSessionFactory() {
         sessionFactory.close();
     }
 }

@@ -6,12 +6,16 @@
     <session-factory>
         <property name="connection.url">jdbc:sqlserver://localhost;database=anticafeM3205Gudauskayte;integratedSecurity=true</property>
         <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <mapping class="DAL.Entity.EntityAnticafe"/>
-        <mapping class="DAL.Entity.EntityBoxWithGame"/>
-        <mapping class="DAL.Entity.EntityCurrentCustomers"/>
-        <mapping class="DAL.Entity.EntityCustomer"/>
-        <mapping class="DAL.Entity.EntityGame"/>
-        <mapping class="DAL.Entity.EntityRegularCustomers"/>
+        <mapping class="DAL.Entity.AnticafeEntity"/>
+        <mapping class="DAL.Entity.BoxWithGameEntity"/>
+        <mapping class="DAL.Entity.CustomerEntity"/>
+        <mapping class="DAL.Entity.GameEntity"/>
+        <mapping class="DAL.Entity.RegularCustomersEntity"/>
+        <mapping class="DAL.Entity.CurrentCusomersAndGamesEntity"/>
+        <mapping class="DAL.Entity.GamesAndDecriptionEntity"/>
+        <mapping class="DAL.Entity.GamesToBuyEntity"/>
+        <mapping class="DAL.Entity.Top10GamesEntity"/>
+        <mapping class="DAL.Entity.CurrentCustomersEntity"/>
 
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->

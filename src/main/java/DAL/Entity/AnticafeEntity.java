@@ -5,14 +5,13 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "anticafe", schema = "dbo", catalog = "anticafeM3205Gudauskayte")
-public class EntityAnticafe {
+public class AnticafeEntity {
     private int id;
     private String workingHours;
     private Integer numberOfTables;
     private String addressOfCafe;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     public int getId() {
         return id;
@@ -56,7 +55,7 @@ public class EntityAnticafe {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        EntityAnticafe that = (EntityAnticafe) o;
+        AnticafeEntity that = (AnticafeEntity) o;
         return id == that.id &&
                 Objects.equals(workingHours, that.workingHours) &&
                 Objects.equals(numberOfTables, that.numberOfTables) &&
