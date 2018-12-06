@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.AnticafeTableController">
+   <children>
+      <TableView fx:id="tabableAnticafe" layoutX="14.0" layoutY="60.0" prefHeight="326.0" prefWidth="427.0">
+        <columns>
+          <TableColumn fx:id="anticafeId" prefWidth="50.0" text="id" />
+          <TableColumn fx:id="address" prefWidth="250.0" text="Adress" />
+          <TableColumn fx:id="workingHours" prefWidth="75.0" text="Hours" />
+          <TableColumn fx:id="numberOfTables" prefWidth="50.0" text="Tables" />
+        </columns>
+      </TableView>
+      <Label graphicTextGap="0.0" layoutX="14.0" layoutY="14.0" text="Anticafe table:">
+         <font>
+            <Font name="NewsGoth Lt BT Light" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -2,11 +2,12 @@ package Service.Implementations;
 
 import DAL.DAO.interfaces.GameDAO;
 import DAL.Entity.GameEntity;
+import Service.Interfaces.GameService;
 import Service.Interfaces.Service;
 
 import java.util.List;
 
-public class GameServiceImplementation implements Service.Interfaces.GameService {
+public class GameServiceImplementation implements GameService {
     private GameDAO dao;
 
     public GameServiceImplementation(GameDAO dao) {
