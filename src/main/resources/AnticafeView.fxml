@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="400.0" prefWidth="800.0" stylesheets="@PaneView.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Anticafes">
+               <content>
+                  <SplitPane fx:id="anticafePane" prefHeight="100.0" />
+               </content>
+          </Tab>
+            <Tab text="Games">
+               <content>
+                  <SplitPane fx:id="gamePane" prefHeight="100.0" />
+               </content>
+            </Tab>
+          <Tab text="Boxes with games">
+               <content>
+                  <SplitPane fx:id="boxPane" prefHeight="100.0" />
+               </content>
+          </Tab>
+            <Tab text="Current customers">
+               <content>
+                  <SplitPane fx:id="currCustomersPane" prefHeight="100.0" />
+               </content>
+            </Tab>
+            <Tab text="Customers">
+               <content>
+                  <SplitPane fx:id="customersPane" prefHeight="100.0" />
+               </content>
+            </Tab>
+            <Tab text="Regular customers">
+               <content>
+                  <SplitPane fx:id="regularCustomersPane" prefHeight="100.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

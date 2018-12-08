@@ -6,6 +6,9 @@
     <session-factory>
         <property name="connection.url">jdbc:sqlserver://localhost;database=anticafeM3205Gudauskayte;integratedSecurity=true</property>
         <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
         <mapping class="DAL.Entity.AnticafeEntity"/>
         <mapping class="DAL.Entity.BoxWithGameEntity"/>
         <mapping class="DAL.Entity.CustomerEntity"/>

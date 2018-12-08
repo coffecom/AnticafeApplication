@@ -14,7 +14,7 @@ public class FXapp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("AnticafeTable.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("AnticafeView.fxml"));
         primaryStage.setTitle("Anticafe");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

@@ -8,14 +8,14 @@ import org.hibernate.Session;
 import java.util.List;
 import java.util.function.Predicate;
 
-public interface DAO<T, ID> {
-    Session openSession();
+public interface DAO<T> {
+ /*   Session openSession();
 
     Session openSessionWithTransaction();
 
     void closeSession();
 
-    void closeSessionWithTransaction();
+    void closeSessionWithTransaction();*/
 
     void add(T entity);
 
@@ -25,9 +25,5 @@ public interface DAO<T, ID> {
 
     void deleteAll();
 
-    T getEntityById(ID id);
-
     List<T> getAll();
-
-    // ArrayList<T> getSome(Predicate<T> predicate);
 }
