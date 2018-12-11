@@ -1,16 +1,17 @@
 package GUI.Tables;
 
-import DAL.Entity.AnticafeEntity;
 import DAL.Entity.GameEntity;
-import GUI.DataBaseTableView;
-import Service.Implementations.EntityService;
-import Service.Interfaces.Service;
+import Service.Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.Tab;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import java.util.ArrayList;
 
 public class GameTableView implements DataBaseTableView {
     private TableView<GameEntity> view;
@@ -53,5 +54,46 @@ public class GameTableView implements DataBaseTableView {
 
         view.setItems(list);
         view.getColumns().setAll(title, genre, age, difficulty, popularity, notation, cost, minutes);
+    }
+    @SuppressWarnings("unchecked")
+    public BarChart getGenreAndMinutesChart(){
+        final CategoryAxis xAxis = new CategoryAxis();
+        xAxis.setLabel("Genre");
+        xAxis.setAnimated(false);
+
+        final NumberAxis yAxis = new NumberAxis();
+        yAxis.setLabel("Minutes");
+        yAxis.setAnimated(false);
+        //xAxis.setTickLabelsVisible(true);
+
+        BarChart<String, Number> barChart = new BarChart<>(xAxis,yAxis);
+        barChart.setAnimated(false);
+
+        XYChart.Series<String, Number> series = new XYChart.Series();
+        series.setName("Minutes played");
+
+        for(String genre: getGenres()){
+            series.getData().add(new XYChart.Data<String, Number>(genre, getHoursByGenre(genre)));
+        }
+
+        barChart.getData().add(series);
+        return barChart;
+    }
+    private ArrayList<String> getGenres(){
+        ArrayList<String> list = new ArrayList<>();
+        for(GameEntity entity: service.getAll()){
+            if(!list.contains(entity.getGenre())){
+                list.add(entity.getGenre());
+            }
+        }
+        return list;
+    }
+    private Integer getHoursByGenre(String genre){
+        int value = 0;
+        for(GameEntity entity: service.getAll())
+            if (entity.getGenre().equals(genre)) {
+                value += entity.getMinutesPlayed();
+            }
+        return value;
     }
 }

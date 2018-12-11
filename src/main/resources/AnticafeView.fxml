@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.*?>
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
-   <children>
-      <TabPane fx:id="tabPane" prefHeight="400.0" prefWidth="800.0" stylesheets="@PaneView.css" tabClosingPolicy="UNAVAILABLE">
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@PaneView.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
         <tabs>
           <Tab text="Anticafes">
                <content>
@@ -41,7 +36,10 @@
                   <SplitPane fx:id="regularCustomersPane" prefHeight="100.0" />
                </content>
             </Tab>
+            <Tab text="Сharts">
+              <content>
+                <SplitPane fx:id="charts" />
+              </content>
+            </Tab>
         </tabs>
       </TabPane>
-   </children>
-</AnchorPane>

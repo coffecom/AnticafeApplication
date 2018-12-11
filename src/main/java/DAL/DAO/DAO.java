@@ -1,12 +1,6 @@
-package DAL.DAO.interfaces;
-
-import DAL.Connector;
-import DAL.HibernateSessionFactory;
-import org.hibernate.Hibernate;
-import org.hibernate.Session;
+package DAL.DAO;
 
 import java.util.List;
-import java.util.function.Predicate;
 
 public interface DAO<T> {
  /*   Session openSession();

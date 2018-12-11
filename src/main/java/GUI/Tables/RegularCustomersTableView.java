@@ -1,9 +1,7 @@
 package GUI.Tables;
 
 import DAL.Entity.RegularCustomersEntity;
-import GUI.DataBaseTableView;
-import Service.Implementations.EntityService;
-import Service.Interfaces.Service;
+import Service.Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;

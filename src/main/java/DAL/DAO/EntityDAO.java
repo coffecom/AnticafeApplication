@@ -1,7 +1,6 @@
-package DAL.DAO.implementations;
+package DAL.DAO;
 
-import DAL.Connector;
-import DAL.DAO.interfaces.DAO;
+import DAL.DAO.DAO;
 import org.hibernate.SessionFactory;
 
 import java.util.List;

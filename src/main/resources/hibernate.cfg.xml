@@ -14,15 +14,10 @@
         <mapping class="DAL.Entity.CustomerEntity"/>
         <mapping class="DAL.Entity.GameEntity"/>
         <mapping class="DAL.Entity.RegularCustomersEntity"/>
-        <mapping class="DAL.Entity.CurrentCusomersAndGamesEntity"/>
-        <mapping class="DAL.Entity.GamesAndDecriptionEntity"/>
-        <mapping class="DAL.Entity.GamesToBuyEntity"/>
-        <mapping class="DAL.Entity.Top10GamesEntity"/>
         <mapping class="DAL.Entity.CurrentCustomersEntity"/>
 
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
-
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>

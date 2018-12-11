@@ -1,4 +1,4 @@
-package Service.Interfaces;
+package Service;
 
 import java.util.List;
 
@@ -12,7 +12,4 @@ public interface Service<T> {
     void delete(T entity);
 
     void deleteAll();
-
-    /*void startTransaction();
-    void commitTransacton();*/
 }

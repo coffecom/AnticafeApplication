@@ -1,10 +1,7 @@
-package Service.Implementations;
+package Service;
 
-import DAL.DAO.implementations.EntityDAO;
-import DAL.DAO.interfaces.DAO;
-import DAL.Entity.AnticafeEntity;
-import DAL.HibernateSessionFactory;
-import Service.Interfaces.Service;
+import DAL.DAO.EntityDAO;
+import DAL.DAO.DAO;
 import org.hibernate.SessionFactory;
 
 import java.util.List;

@@ -1,18 +1,12 @@
 package GUI.Tables;
 
 import DAL.Entity.CurrentCustomersEntity;
-import DAL.Entity.GameEntity;
-import GUI.DataBaseTableView;
-import Service.Implementations.EntityService;
-import Service.Interfaces.Service;
+import Service.Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.Tab;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-import javax.persistence.criteria.CriteriaBuilder;
 
 public class CurrentCustomersTableView implements DataBaseTableView {
     private TableView<CurrentCustomersEntity> view;

@@ -1,12 +1,9 @@
 package GUI.Tables;
 
 import DAL.Entity.BoxWithGameEntity;
-import GUI.DataBaseTableView;
-import Service.Implementations.EntityService;
-import Service.Interfaces.Service;
+import Service.Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.Tab;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;

@@ -1,10 +1,7 @@
 package GUI.Tables;
 
 import DAL.Entity.AnticafeEntity;
-import GUI.DataBaseTableView;
-import Service.Implementations.EntityService;
-import Service.Interfaces.Service;
-import javafx.beans.Observable;
+import Service.Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;

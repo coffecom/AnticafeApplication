@@ -1,4 +1,4 @@
-package GUI;
+package GUI.Tables;
 
 import javafx.scene.control.TableView;
 

@@ -1,10 +1,11 @@
 package GUI;
 
-import DAL.DAO.implementations.EntityDAO;
+import DAL.DAO.EntityDAO;
 import DAL.Entity.*;
 import DAL.HibernateSessionFactory;
+import GUI.Charts.Charts;
 import GUI.Tables.*;
-import Service.Implementations.EntityService;
+import Service.EntityService;
 import javafx.fxml.FXML;
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.TabPane;
@@ -26,13 +27,21 @@ public class Controller {
     @FXML
     public SplitPane regularCustomersPane;
     @FXML
+    public SplitPane charts;
+
+    @FXML
     private void initialize(){
         initData();
     }
-    
+
     @SuppressWarnings("unchecked")
     public void initData(){
         SessionFactory factory = HibernateSessionFactory.getSessionFactory();
+        Charts chart = new Charts();
+
+        charts.getItems().add(chart.getAnticafeStatBar(new EntityService<>(new EntityDAO<>(factory,AnticafeEntity.class))));
+        charts.getItems().add(chart.getGenreAndMinutesPane(new EntityService<>(new EntityDAO<>(factory, GameEntity.class))));
+        charts.getItems().add(chart.getAgePieChart(new EntityService<>(new EntityDAO<>(factory,RegularCustomersEntity.class))));
 
         anticafePane.getItems().add(new AnticafeTableView(new EntityService<>(new EntityDAO<>(factory,AnticafeEntity.class))).getTableView());
         gamePane.getItems().add(new GameTableView(new EntityService<>(new EntityDAO<>(factory, GameEntity.class))).getTableView());

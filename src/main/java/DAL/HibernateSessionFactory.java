@@ -23,6 +23,9 @@ public class HibernateSessionFactory {
     }
 
     public static SessionFactory getSessionFactory() {
+        if(sessionFactory==null){
+            sessionFactory=buildFactory();
+        }
         return sessionFactory;
     }
 

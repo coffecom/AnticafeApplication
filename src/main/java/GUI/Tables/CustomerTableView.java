@@ -1,19 +1,17 @@
 package GUI.Tables;
 
 import DAL.Entity.CustomerEntity;
-import GUI.DataBaseTableView;
-import Service.Interfaces.Service;
+import Service.Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.sql.DatabaseMetaData;
 import java.sql.Timestamp;
 
 public class CustomerTableView implements DataBaseTableView {
-    private TableView<CustomerEntity> view;
+    private TableView<CustomerEntity> view = new TableView<>();
     private ObservableList<CustomerEntity> list;
     private final Service<CustomerEntity> service;
 
@@ -26,7 +24,7 @@ public class CustomerTableView implements DataBaseTableView {
         initData();
         return view;
     }
-
+    @SuppressWarnings("unchecked")
     private void initData() {
         list = FXCollections.observableList(service.getAll());
         view.setItems(list);
