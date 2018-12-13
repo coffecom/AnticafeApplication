@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1168.9895762591966" y="298.0">DAL.Entity.AnticafeEntity</node>
+    <node x="0.0" y="99.0">DAL.Entity.RegularCustomersEntity</node>
+    <node x="0.0" y="690.0">FXapp</node>
+    <node x="2113.770826259197" y="457.0">DAL.HibernateSessionFactory</node>
+    <node x="1472.0156922043013" y="457.0">GUI.Tables.BoxWithGameTableView</node>
+    <node x="890.8281922043011" y="457.0">GUI.Tables.CustomerTableView</node>
+    <node x="382.42222428551236" y="0.0">DAL.DAO.DAO</node>
+    <node x="750.6611019736841" y="298.0">DAL.Entity.CustomerEntity</node>
+    <node x="583.2444353070175" y="457.0">Service.GameServiceImp</node>
+    <node x="1322.9895762591966" y="298.0">GUI.Tables.DataBaseTableView</node>
+    <node x="1224.3034742855123" y="457.0">GUI.Tables.AnticafeTableView</node>
+    <node x="18.166666666666742" y="457.0">GUI.Tables.RegularCustomersTableView</node>
+    <node x="900.6611019736841" y="298.0">Service.GameService</node>
+    <node x="1678.5430576188458" y="99.0">DAL.Entity.GameEntity</node>
+    <node x="250.89680072156216" y="457.0">Service.RegularCustomerServiceImp</node>
+    <node x="205.2444353070175" y="99.0">DAL.DAO.EntityDAO</node>
+    <node x="1064.828192204301" y="457.0">GUI.Charts.Charts</node>
+    <node x="1177.0534742855125" y="99.0">Service.Service</node>
+    <node x="1492.9895762591966" y="298.0">DAL.Entity.BoxWithGameEntity</node>
+    <node x="329.2444353070175" y="298.0">Service.EntityService</node>
+    <node x="1122.3277686403508" y="616.0">GUI.Controller</node>
+    <node x="1957.5833262591968" y="298.0">DAL.Entity.CurrentCustomersEntity</node>
+    <node x="464.2444353070175" y="298.0">Service.RegularCustomerService</node>
+    <node x="1707.9583262591968" y="457.0">GUI.Tables.GameTableView</node>
+    <node x="1860.9583262591968" y="457.0">GUI.Tables.CurrentCustomersTableView</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GUI.Charts.Charts" target="Service.RegularCustomerService">
+      <point x="-30.75" y="-14.5" />
+      <point x="1075.078192204301" y="367.0" />
+      <point x="596.9944353070175" y="367.0" />
+      <point x="44.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.CustomerTableView" target="GUI.Tables.DataBaseTableView">
+      <point x="64.16666666666674" y="-14.5" />
+      <point x="1031.9948588709678" y="427.0" />
+      <point x="1360.4895762591966" y="427.0" />
+      <point x="-37.5" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.CurrentCustomersTableView" target="GUI.Tables.DataBaseTableView">
+      <point x="-82.91666666666674" y="-14.5" />
+      <point x="1877.5416595925299" y="347.0" />
+      <point x="1460.4895762591966" y="347.0" />
+      <point x="62.5" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.AnticafeTableView" target="GUI.Tables.DataBaseTableView">
+      <point x="60.83333333333337" y="-14.5" />
+      <point x="1358.1368076188455" y="437.0" />
+      <point x="1385.4895762591966" y="437.0" />
+      <point x="-12.5" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables.CurrentCustomersTableView">
+      <point x="37.210526315789366" y="-14.5" />
+      <point x="1210.0382949561404" y="576.0" />
+      <point x="1960.4583262591968" y="576.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerService" target="DAL.Entity.RegularCustomersEntity">
+      <point x="-44.25" y="-14.5" />
+      <point x="508.4944353070175" y="148.0" />
+      <point x="160.41666666666674" y="148.0" />
+      <point x="72.91666666666674" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.BoxWithGameTableView" target="GUI.Tables.DataBaseTableView">
+      <point x="-73.75" y="-14.5" />
+      <point x="1486.7656922043013" y="377.0" />
+      <point x="1410.4895762591966" y="377.0" />
+      <point x="12.5" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.CurrentCustomersTableView" target="Service.Service">
+      <point x="-16.583333333333258" y="-14.5" />
+      <point x="1943.8749929258634" y="437.0" />
+      <point x="1932.79165959253" y="437.0" />
+      <point x="1932.79165959253" y="148.0" />
+      <point x="1259.3972242855125" y="148.0" />
+      <point x="39.84375" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.AnticafeTableView" target="Service.Service">
+      <point x="36.500000000000114" y="-14.5" />
+      <point x="1333.8034742855125" y="397.0" />
+      <point x="1312.4895762591966" y="397.0" />
+      <point x="1312.4895762591966" y="238.0" />
+      <point x="1227.5222242855125" y="238.0" />
+      <point x="7.96875" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.CustomerTableView" target="Service.Service">
+      <point x="12.833333333333258" y="-14.5" />
+      <point x="980.6615255376344" y="397.0" />
+      <point x="1027.1611019736843" y="397.0" />
+      <point x="1027.1611019736843" y="228.0" />
+      <point x="1206.2722242855125" y="228.0" />
+      <point x="-13.28125" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.Entity.BoxWithGameEntity">
+      <point x="15.947368421052715" y="-14.5" />
+      <point x="1188.7751370614037" y="536.0" />
+      <point x="1461.5156922043013" y="536.0" />
+      <point x="1461.5156922043013" y="387.0" />
+      <point x="1512.1145762591966" y="387.0" />
+      <point x="-57.375" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerService" target="Service.Service">
+      <point x="44.25" y="-14.5" />
+      <point x="596.9944353070175" y="208.0" />
+      <point x="1195.6472242855125" y="208.0" />
+      <point x="-23.90625" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerServiceImp" target="DAL.DAO.DAO">
+      <point x="-39.59999999999991" y="-14.5" />
+      <point x="310.29680072156225" y="407.0" />
+      <point x="318.7444353070175" y="407.0" />
+      <point x="318.7444353070175" y="59.0" />
+      <point x="404.32222428551233" y="59.0" />
+      <point x="-14.600000000000023" y="14.5" />
+    </edge>
+    <edge source="GUI.Charts.Charts" target="Service.GameService">
+      <point x="-10.25" y="-14.5" />
+      <point x="1095.578192204301" y="357.0" />
+      <point x="987.6611019736841" y="357.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables.RegularCustomersTableView">
+      <point x="-42.52631578947364" y="-14.5" />
+      <point x="1130.3014528508772" y="586.0" />
+      <point x="117.66666666666674" y="586.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="Service.RegularCustomerServiceImp">
+      <point x="-31.894736842105203" y="-14.5" />
+      <point x="1140.9330317982458" y="566.0" />
+      <point x="349.89680072156216" y="566.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.RegularCustomersTableView" target="GUI.Tables.DataBaseTableView">
+      <point x="82.91666666666674" y="-14.5" />
+      <point x="200.58333333333348" y="417.0" />
+      <point x="1335.4895762591966" y="417.0" />
+      <point x="-62.5" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="Service.GameServiceImp">
+      <point x="-21.263157894736878" y="-14.5" />
+      <point x="1151.5646107456141" y="546.0" />
+      <point x="651.7444353070175" y="546.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.EntityService" target="Service.Service">
+      <point x="43.125" y="-14.5" />
+      <point x="429.8694353070175" y="198.0" />
+      <point x="1190.3347242855125" y="198.0" />
+      <point x="-29.21875" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.Entity.CustomerEntity">
+      <point x="-15.947368421052715" y="-14.5" />
+      <point x="1156.8804002192983" y="536.0" />
+      <point x="766.9111019736841" y="536.0" />
+      <point x="-48.75" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.HibernateSessionFactory">
+      <point x="47.84210526315792" y="-14.5" />
+      <point x="1220.6698739035087" y="596.0" />
+      <point x="2202.770826259197" y="596.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerServiceImp" target="DAL.Entity.RegularCustomersEntity">
+      <point x="-79.19999999999993" y="-14.5" />
+      <point x="270.6968007215622" y="407.0" />
+      <point x="260.92180072156225" y="407.0" />
+      <point x="260.92180072156225" y="158.0" />
+      <point x="131.25" y="158.0" />
+      <point x="43.75" y="14.5" />
+    </edge>
+    <edge source="GUI.Charts.Charts" target="DAL.Entity.AnticafeEntity">
+      <point x="30.75" y="-14.5" />
+      <point x="1136.578192204301" y="397.0" />
+      <point x="1181.1895762591967" y="397.0" />
+      <point x="-48.799999999999955" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.GameTableView" target="Service.Service">
+      <point x="-11.083333333333371" y="-14.5" />
+      <point x="1763.3749929258634" y="437.0" />
+      <point x="1768.9583262591966" y="437.0" />
+      <point x="1768.9583262591966" y="198.0" />
+      <point x="1248.7722242855125" y="198.0" />
+      <point x="29.21875" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.Entity.AnticafeEntity">
+      <point x="5.315789473684163" y="-14.5" />
+      <point x="1178.143558114035" y="516.0" />
+      <point x="1180.9615255376345" y="516.0" />
+      <point x="1180.9615255376345" y="407.0" />
+      <point x="1205.5895762591967" y="407.0" />
+      <point x="-24.399999999999977" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables.AnticafeTableView">
+      <point x="10.631578947368325" y="-14.5" />
+      <point x="1183.459347587719" y="526.0" />
+      <point x="1297.3034742855123" y="526.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.CustomerTableView" target="DAL.Entity.CustomerEntity">
+      <point x="-38.5" y="-14.5" />
+      <point x="929.3281922043011" y="387.0" />
+      <point x="831.9111019736841" y="387.0" />
+      <point x="16.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Charts.Charts" target="Service.Service">
+      <point x="10.25" y="-14.5" />
+      <point x="1116.078192204301" y="387.0" />
+      <point x="1158.4895762591966" y="387.0" />
+      <point x="1158.4895762591966" y="248.0" />
+      <point x="1216.8972242855125" y="248.0" />
+      <point x="-2.65625" y="14.5" />
+    </edge>
+    <edge source="Service.GameService" target="DAL.Entity.GameEntity">
+      <point x="29.0" y="-14.5" />
+      <point x="987.6611019736841" y="268.0" />
+      <point x="1705.7930576188458" y="268.0" />
+      <point x="-27.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.Entity.RegularCustomersEntity">
+      <point x="-47.84210526315792" y="-14.5" />
+      <point x="1124.9856633771929" y="596.0" />
+      <point x="7.666666666666515" y="596.0" />
+      <point x="7.666666666666515" y="278.0" />
+      <point x="14.583333333333258" y="278.0" />
+      <point x="-72.91666666666674" y="14.5" />
+    </edge>
+    <edge source="Service.GameServiceImp" target="Service.GameService">
+      <point x="54.80000000000001" y="-14.5" />
+      <point x="706.5444353070175" y="407.0" />
+      <point x="929.6611019736841" y="407.0" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="Service.GameServiceImp" target="DAL.Entity.GameEntity">
+      <point x="27.399999999999977" y="-14.5" />
+      <point x="679.1444353070175" y="397.0" />
+      <point x="740.1611019736841" y="397.0" />
+      <point x="740.1611019736841" y="258.0" />
+      <point x="1687.626390952179" y="258.0" />
+      <point x="-45.41666666666674" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.RegularCustomersTableView" target="DAL.Entity.RegularCustomersEntity">
+      <point x="-16.583333333333258" y="-14.5" />
+      <point x="101.08333333333348" y="437.0" />
+      <point x="91.52180072156216" y="437.0" />
+      <point x="91.52180072156216" y="168.0" />
+      <point x="102.08333333333326" y="168.0" />
+      <point x="14.583333333333258" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.Entity.CurrentCustomersEntity">
+      <point x="42.526315789473756" y="-14.5" />
+      <point x="1215.3540844298245" y="586.0" />
+      <point x="2103.270826259197" y="586.0" />
+      <point x="2103.270826259197" y="437.0" />
+      <point x="2110.708326259197" y="437.0" />
+      <point x="65.625" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables.GameTableView">
+      <point x="31.894736842105203" y="-14.5" />
+      <point x="1204.7225054824562" y="566.0" />
+      <point x="1774.4583262591968" y="566.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.GameServiceImp" target="DAL.DAO.DAO">
+      <point x="0.0" y="-14.5" />
+      <point x="651.7444353070175" y="79.0" />
+      <point x="448.1222242855124" y="79.0" />
+      <point x="29.200000000000045" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.CurrentCustomersTableView" target="DAL.Entity.CurrentCustomersEntity">
+      <point x="82.91666666666674" y="-14.5" />
+      <point x="2043.3749929258636" y="437.0" />
+      <point x="2066.958326259197" y="437.0" />
+      <point x="21.875" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables.CustomerTableView">
+      <point x="-10.631578947368325" y="-14.5" />
+      <point x="1162.1961896929824" y="526.0" />
+      <point x="967.8281922043011" y="526.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.GameTableView" target="DAL.Entity.GameEntity">
+      <point x="33.25" y="-14.5" />
+      <point x="1807.7083262591968" y="437.0" />
+      <point x="1820.9384673882287" y="437.0" />
+      <point x="1820.9384673882287" y="178.0" />
+      <point x="1760.2930576188458" y="178.0" />
+      <point x="27.25" y="14.5" />
+    </edge>
+    <edge source="Service.EntityService" target="DAL.DAO.EntityDAO">
+      <point x="-43.125" y="-14.5" />
+      <point x="343.6194353070175" y="168.0" />
+      <point x="282.4944353070175" y="168.0" />
+      <point x="25.75" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.Entity.GameEntity">
+      <point x="26.57894736842104" y="-14.5" />
+      <point x="1199.406716008772" y="556.0" />
+      <point x="1697.4583262591968" y="556.0" />
+      <point x="1697.4583262591968" y="278.0" />
+      <point x="1723.9597242855125" y="278.0" />
+      <point x="-9.083333333333258" y="14.5" />
+    </edge>
+    <edge source="DAL.DAO.EntityDAO" target="DAL.DAO.DAO">
+      <point x="0.0" y="-14.5" />
+      <point x="256.7444353070175" y="49.0" />
+      <point x="389.7222242855123" y="49.0" />
+      <point x="-29.200000000000003" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.BoxWithGameTableView" target="Service.Service">
+      <point x="44.25" y="-14.5" />
+      <point x="1604.7656922043013" y="427.0" />
+      <point x="1670.1458262591968" y="427.0" />
+      <point x="1670.1458262591968" y="228.0" />
+      <point x="1232.8347242855125" y="228.0" />
+      <point x="13.28125" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL.DAO.EntityDAO">
+      <point x="-37.21052631578948" y="-14.5" />
+      <point x="1135.6172423245614" y="576.0" />
+      <point x="227.66666666666674" y="576.0" />
+      <point x="227.66666666666674" y="168.0" />
+      <point x="230.9944353070175" y="168.0" />
+      <point x="-25.75" y="14.5" />
+    </edge>
+    <edge source="Service.GameService" target="Service.Service">
+      <point x="-29.0" y="-14.5" />
+      <point x="929.6611019736841" y="218.0" />
+      <point x="1200.9597242855125" y="218.0" />
+      <point x="-18.59375" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Charts.Charts">
+      <point x="-5.315789473684163" y="-14.5" />
+      <point x="1167.5119791666666" y="516.0" />
+      <point x="1085.328192204301" y="516.0" />
+      <point x="-20.5" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.AnticafeTableView" target="DAL.Entity.AnticafeEntity">
+      <point x="-12.166666666666515" y="-14.5" />
+      <point x="1285.1368076188458" y="407.0" />
+      <point x="1278.7895762591966" y="407.0" />
+      <point x="48.799999999999955" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="Service.EntityService">
+      <point x="-26.57894736842104" y="-14.5" />
+      <point x="1146.24882127193" y="556.0" />
+      <point x="459.39680072156216" y="556.0" />
+      <point x="459.39680072156216" y="397.0" />
+      <point x="386.7444353070175" y="397.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.GameTableView" target="GUI.Tables.DataBaseTableView">
+      <point x="-55.416666666666686" y="-14.5" />
+      <point x="1719.04165959253" y="367.0" />
+      <point x="1435.4895762591966" y="367.0" />
+      <point x="37.5" y="14.5" />
+    </edge>
+    <edge source="Service.EntityService" target="DAL.DAO.DAO">
+      <point x="14.375" y="-14.5" />
+      <point x="401.1194353070175" y="168.0" />
+      <point x="397.8948588709677" y="168.0" />
+      <point x="397.8948588709677" y="79.0" />
+      <point x="433.5222242855124" y="79.0" />
+      <point x="14.600000000000023" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables.BoxWithGameTableView">
+      <point x="21.263157894736878" y="-14.5" />
+      <point x="1194.0909265350879" y="546.0" />
+      <point x="1560.5156922043013" y="546.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.GameServiceImp" target="Service.EntityService">
+      <point x="-27.400000000000006" y="-14.5" />
+      <point x="624.3444353070175" y="377.0" />
+      <point x="432.7444353070175" y="377.0" />
+      <point x="46.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.BoxWithGameTableView" target="DAL.Entity.BoxWithGameEntity">
+      <point x="-14.75" y="-14.5" />
+      <point x="1545.7656922043013" y="407.0" />
+      <point x="1588.6145762591966" y="407.0" />
+      <point x="19.125" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerServiceImp" target="Service.EntityService">
+      <point x="0.0" y="-14.5" />
+      <point x="349.89680072156216" y="407.0" />
+      <point x="340.7444353070175" y="407.0" />
+      <point x="-46.0" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerServiceImp" target="Service.RegularCustomerService">
+      <point x="79.19999999999999" y="-14.5" />
+      <point x="429.0968007215622" y="407.0" />
+      <point x="508.4944353070175" y="407.0" />
+      <point x="-44.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables.RegularCustomersTableView" target="Service.Service">
+      <point x="49.75" y="-14.5" />
+      <point x="167.41666666666674" y="417.0" />
+      <point x="122.95276864035088" y="417.0" />
+      <point x="122.95276864035088" y="188.0" />
+      <point x="1185.0222242855125" y="188.0" />
+      <point x="-34.53125" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="508.0" y="253.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

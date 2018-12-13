@@ -6,6 +6,8 @@ import DAL.HibernateSessionFactory;
 import GUI.Charts.Charts;
 import GUI.Tables.*;
 import Service.EntityService;
+import Service.GameServiceImp;
+import Service.RegularCustomerServiceImp;
 import javafx.fxml.FXML;
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.TabPane;
@@ -40,8 +42,8 @@ public class Controller {
         Charts chart = new Charts();
 
         charts.getItems().add(chart.getAnticafeStatBar(new EntityService<>(new EntityDAO<>(factory,AnticafeEntity.class))));
-        charts.getItems().add(chart.getGenreAndMinutesPane(new EntityService<>(new EntityDAO<>(factory, GameEntity.class))));
-        charts.getItems().add(chart.getAgePieChart(new EntityService<>(new EntityDAO<>(factory,RegularCustomersEntity.class))));
+        charts.getItems().add(chart.getGenreAndMinutesPane(new GameServiceImp(new EntityDAO<>(factory, GameEntity.class))));
+        charts.getItems().add(chart.getAgePieChart(new RegularCustomerServiceImp(new EntityDAO<>(factory,RegularCustomersEntity.class))));
 
         anticafePane.getItems().add(new AnticafeTableView(new EntityService<>(new EntityDAO<>(factory,AnticafeEntity.class))).getTableView());
         gamePane.getItems().add(new GameTableView(new EntityService<>(new EntityDAO<>(factory, GameEntity.class))).getTableView());

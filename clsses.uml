@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="364.0" y="318.0">FXapp</node>
+    <node x="682.75" y="178.0">DAL</node>
+    <node x="348.125" y="89.0">Service.GameService</node>
+    <node x="306.75" y="178.0">Service.RegularCustomerServiceImp</node>
+    <node x="154.65888278388277" y="178.0">GUI.Charts.Charts</node>
+    <node x="123.54166666666666" y="0.0">Service.Service</node>
+    <node x="357.875" y="267.0">GUI.Controller</node>
+    <node x="530.5398351648352" y="89.0">Service.EntityService</node>
+    <node x="524.75" y="178.0">Service.GameServiceImp</node>
+    <node x="134.0" y="89.0">Service.RegularCustomerService</node>
+    <node x="0.0" y="89.0">GUI.Tables</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="GUI.Charts.Charts" target="Service.RegularCustomerService">
+      <point x="0.0" y="-14.5" />
+      <point x="195.65888278388277" y="158.0" />
+      <point x="178.25" y="158.0" />
+      <point x="-44.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="Service.RegularCustomerServiceImp">
+      <point x="0.0" y="-14.5" />
+      <point x="408.375" y="247.0" />
+      <point x="405.75" y="247.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="Service.GameServiceImp">
+      <point x="14.428571428571445" y="-14.5" />
+      <point x="422.80357142857144" y="227.0" />
+      <point x="593.25" y="227.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.GameService" target="Service.Service">
+      <point x="0.0" y="-14.5" />
+      <point x="406.125" y="59.0" />
+      <point x="187.29166666666666" y="59.0" />
+      <point x="21.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Charts.Charts">
+      <point x="-14.428571428571388" y="-14.5" />
+      <point x="393.9464285714286" y="227.0" />
+      <point x="216.15888278388277" y="227.0" />
+      <point x="20.5" y="14.5" />
+    </edge>
+    <edge source="Service.EntityService" target="Service.Service">
+      <point x="0.0" y="-14.5" />
+      <point x="588.0398351648352" y="49.0" />
+      <point x="201.4583333333333" y="49.0" />
+      <point x="35.41666666666663" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="Service.EntityService">
+      <point x="28.857142857142833" y="-14.5" />
+      <point x="437.23214285714283" y="237.0" />
+      <point x="672.25" y="237.0" />
+      <point x="672.25" y="148.0" />
+      <point x="634.0398351648353" y="148.0" />
+      <point x="46.00000000000003" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="GUI.Tables">
+      <point x="-43.28571428571428" y="-14.5" />
+      <point x="365.0892857142857" y="247.0" />
+      <point x="56.5" y="247.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerService" target="Service.Service">
+      <point x="0.0" y="-14.5" />
+      <point x="222.5" y="69.0" />
+      <point x="173.12499999999997" y="69.0" />
+      <point x="7.083333333333314" y="14.5" />
+    </edge>
+    <edge source="GUI.Charts.Charts" target="Service.Service">
+      <point x="-27.333333333333314" y="-14.5" />
+      <point x="168.32554945054946" y="158.0" />
+      <point x="123.5" y="158.0" />
+      <point x="123.5" y="69.0" />
+      <point x="158.95833333333334" y="69.0" />
+      <point x="-7.083333333333314" y="14.5" />
+    </edge>
+    <edge source="Service.GameServiceImp" target="Service.GameService">
+      <point x="-45.66666666666663" y="-14.5" />
+      <point x="547.5833333333334" y="138.0" />
+      <point x="435.125" y="138.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+    <edge source="Service.GameServiceImp" target="Service.EntityService">
+      <point x="0.0" y="-14.5" />
+      <point x="593.25" y="158.0" />
+      <point x="588.0398351648352" y="158.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Charts.Charts" target="Service.GameService">
+      <point x="27.333333333333343" y="-14.5" />
+      <point x="222.99221611721612" y="158.0" />
+      <point x="377.125" y="158.0" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerServiceImp" target="Service.EntityService">
+      <point x="66.0" y="-14.5" />
+      <point x="471.75" y="158.0" />
+      <point x="565.0398351648352" y="158.0" />
+      <point x="-23.0" y="14.5" />
+    </edge>
+    <edge source="GUI.Tables" target="Service.Service">
+      <point x="28.25" y="-14.5" />
+      <point x="84.75" y="59.0" />
+      <point x="144.79166666666666" y="59.0" />
+      <point x="-21.25" y="14.5" />
+    </edge>
+    <edge source="Service.RegularCustomerServiceImp" target="Service.RegularCustomerService">
+      <point x="-66.0" y="-14.5" />
+      <point x="339.75" y="148.0" />
+      <point x="266.75" y="148.0" />
+      <point x="44.25" y="14.5" />
+    </edge>
+    <edge source="GUI.Controller" target="DAL">
+      <point x="43.28571428571428" y="-14.5" />
+      <point x="451.6607142857143" y="247.0" />
+      <point x="733.25" y="247.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="268.5" y="253.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
